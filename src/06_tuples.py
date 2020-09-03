@@ -33,7 +33,12 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 
 
 # Write a function `print_tuple` that prints all the values in a tuple
-
+def print_tuple(t):
+    if type(t)==int:
+        print(t)
+    else:
+        for x in t:
+            print(x)
 # YOUR CODE HERE
 
 t = (1, 2, 5, 7, 99)
