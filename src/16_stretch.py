@@ -7,7 +7,7 @@
 
 x = int(input("Is it prime: "))
 
-# If num is divisible by any number between 2 and n / 2, it is not prime  
+# If num is divisible by any number between 2 and sqrt(n), it is not prime  
 
 if x > 1:
     for i in range(2,x):

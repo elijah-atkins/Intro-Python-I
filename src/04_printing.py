@@ -11,11 +11,11 @@ z = "I like turtles!"
 # Using the printf operator (%), print the following feeding in the values of x,
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
-a = "x is %s, y is %s, z is %s" % (x,y,z)
+a = "x is %s, y is %.2f, z is %s" % (x,y,z)
 # Use the 'format' string method to print the same thing
-b = "x is {}, y is {}, x is {}.".format(x, y,z)
+b = "x is {}, y is {:.2f}, x is {}.".format(x, y,z)
 # Finally, print the same thing using an f-string
-c = f"x is {x}, y is {y}, x is {z}"
+c = f"x is {x}, y is {y:.2f}, x is {z}"
 print(a)
 print(b)
 print(c)
