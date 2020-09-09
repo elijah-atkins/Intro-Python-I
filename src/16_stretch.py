@@ -10,11 +10,10 @@ x = int(input("Is it prime: "))
 # If num is divisible by any number between 2 and sqrt(n), it is not prime  
 
 if x > 1:
-    for i in range(2,x):
+    for i in range(2,int(x)):
         if (x % i) == 0:
             print(x, "is not a prime number")
             print(i, "times", x//i,"is", x)
-
             break
     else:
             print(x, "is a prime number")
